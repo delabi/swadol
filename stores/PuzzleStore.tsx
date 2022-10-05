@@ -14,22 +14,24 @@ export default {
     return this.guesses.slice(0, this.currentGuess).join('').split('')
   },
   get exactGuesses() {
+    const self = this;
     return (
       this.word
         .split('')
         // if any guesses include this letter in this position/index
         .filter((letter, i) => {
-          return this.guesses
-            .slice(0, this.currentGuess)
+          return self.guesses
+            .slice(0, self.currentGuess)
             .map((word) => word[i])
             .includes(letter)
         })
     )
   },
   get inexactGuesses() {
-    return this.word
+    const self = this;
+    return self.word
       .split('')
-      .filter((letter) => this.allGuesses.includes(letter))
+      .filter((letter) => self.allGuesses.includes(letter))
   },
   init() {
     this.word = words[Math.round(Math.random() * words.length)]
