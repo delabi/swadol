@@ -29,8 +29,8 @@ export default observer(function Home() {
       {store.lost && <h1>You lost!</h1>}
       {(store.won || store.lost) && (<button onClick={store.init}>Play Again</button>)}
       <Qwerty store={store}/>
-      word: {store.word} <br/>
-      guesses: {JSON.stringify(store.guesses)}
+      {/* word: {store.word} <br/> */}
+      {/* guesses: {JSON.stringify(store.guesses)} */}
     </div>
   )
 })
