@@ -15,7 +15,7 @@ export default observer(function Home() {
     }
   }, [])
   return (
-    <div className="flex h-screen w-scren flex-col items-center justify-center bg-gray-600">
+    <div className="flex h-screen w-screen flex-col items-center justify-center bg-gray-600">
       <h1 className="text-6xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-green-400">Wordle
       </h1>
       {store.guesses.map((_, i) => (
