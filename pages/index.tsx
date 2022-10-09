@@ -26,7 +26,8 @@ export default observer(function Home() {
         isGuessed={i < store.currentGuess}/>
       ))}
       {store.won && <h1>You won!</h1>}
-      {store.lost && <h1>You lost!</h1>}
+      {store.lost && <h1>You lost!<br/></h1>}
+      {store.lost && <h1>Answer is {store.word}</h1>}
       {(store.won || store.lost) && (<button onClick={store.init}>Play Again</button>)}
       <Qwerty store={store}/>
       {/* word: {store.word} <br/> */}
