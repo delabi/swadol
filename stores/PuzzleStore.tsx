@@ -1,4 +1,4 @@
-import words from '../words.json'
+import words from '../maneno.json'
 
 export default {
   word: '',
