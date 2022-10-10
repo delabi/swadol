@@ -16,7 +16,7 @@ export default observer(function Qwerty({store}:any) {
               : 'bg-gray-200'
             return (
               <div
-                className={`rounded-m m-px flex h-10 w-10 items-center justify-center uppercase ${bgColor}`}
+                className={`rounded-m m-px flex h-8 w-8 items-center justify-center uppercase ${bgColor}`}
               >
                 {char}
               </div>
