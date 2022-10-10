@@ -29,7 +29,7 @@ export default observer(function Home() {
       {store.won && <h1>You won!</h1>}
       {store.lost && <h1>You lost!<br/></h1>}
       {store.lost && <h1>Answer is {store.word}</h1>}
-      {(store.won || store.lost) && (<button onClick={store.init}>Play Again</button>)}
+      {(store.won || store.lost) && (<button onClick={store.init} className="px-4 py-1 my-2 text-sm text-purple-600 bg-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Play Again</button>)}
       <Qwerty store={store}/>
       {/* word: {store.word} <br/> */}
       {/* guesses: {JSON.stringify(store.guesses)} */}
