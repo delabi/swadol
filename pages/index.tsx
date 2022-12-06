@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Guess from "../components/Guess";
 import Qwerty from "../components/Qwerty";
 import PuzzleStore from "../stores/PuzzleStore";
+import { AnalyticsWrapper } from "../components/analytics";
 
 export default observer(function Home() {
   const store = useLocalObservable(() => PuzzleStore);
@@ -47,6 +48,7 @@ export default observer(function Home() {
         </button>
       )}
       <Qwerty store={store} />
+      <AnalyticsWrapper />
       {/* word: {store.word} <br/> */}
       {/* guesses: {JSON.stringify(store.guesses)} */}
     </div>

@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.5",
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
     "next": "latest",
