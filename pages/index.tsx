@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Guess from "../components/Guess";
 import Qwerty from "../components/Qwerty";
 import PuzzleStore from "../stores/PuzzleStore";
-import { AnalyticsWrapper } from "../components/analytics";
+import { AnalyticsWrapper } from "../components/Analytics";
 
 export default observer(function Home() {
   const store = useLocalObservable(() => PuzzleStore);
